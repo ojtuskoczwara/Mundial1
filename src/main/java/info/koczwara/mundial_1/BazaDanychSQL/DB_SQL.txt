@@ -1,0 +1,57 @@
+-- Create tables section -------------------------------------------------
+
+-- Table Zawodnik
+
+CREATE TABLE `Zawodnik`
+(
+  `idZawodnika` Int NOT NULL AUTO_INCREMENT,
+  `imie` Varchar(30) NOT NULL,
+  `nazwisko` Varchar(40) NOT NULL,
+  PRIMARY KEY (`idZawodnika`)
+)
+;
+
+-- Table Reprezentacja
+
+CREATE TABLE `Reprezentacja`
+(
+  `idReprezentacji` Int NOT NULL AUTO_INCREMENT,
+  `nazwa` Varchar(30) NOT NULL,
+  PRIMARY KEY (`idReprezentacji`)
+)
+;
+
+-- Table Mundial
+
+CREATE TABLE `Mundial`
+(
+  `idMundialu` Int NOT NULL AUTO_INCREMENT,
+  `lokalizacja` Varchar(40) NOT NULL,
+  `rok` Int(4) NOT NULL,
+  PRIMARY KEY (`idMundialu`)
+)
+;
+
+-- Table Zawodnik_W_Reprezentacja
+
+CREATE TABLE `Zawodnik_W_Reprezentacja`
+(
+  `idZawodnika` Int NOT NULL,
+  `idReprezentacji` Int NOT NULL,
+  `idMundialu` Int NOT NULL
+)
+;
+
+ALTER TABLE `Zawodnik_W_Reprezentacja` ADD  PRIMARY KEY (`idZawodnika`,`idReprezentacji`,`idMundialu`)
+;
+
+-- Create relationships section -------------------------------------------------
+
+ALTER TABLE `Zawodnik_W_Reprezentacja` ADD CONSTRAINT `Relationship1` FOREIGN KEY (`idZawodnika`) REFERENCES `Zawodnik` (`idZawodnika`) ON DELETE RESTRICT ON UPDATE RESTRICT
+;
+
+ALTER TABLE `Zawodnik_W_Reprezentacja` ADD CONSTRAINT `Relationship2` FOREIGN KEY (`idReprezentacji`) REFERENCES `Reprezentacja` (`idReprezentacji`) ON DELETE RESTRICT ON UPDATE RESTRICT
+;
+
+ALTER TABLE `Zawodnik_W_Reprezentacja` ADD CONSTRAINT `Relationship3` FOREIGN KEY (`idMundialu`) REFERENCES `Mundial` (`idMundialu`) ON DELETE RESTRICT ON UPDATE RESTRICT
+;
