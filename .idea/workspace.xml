@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c361b23e-a1ad-4aab-b510-a24b081c014e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/NotImplement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/ConnectionDB.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/ConnectionDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/SingletonConnectionService.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/SingletonConnectionService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/MainApp.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/MainApp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -39,8 +39,8 @@
       <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+            <state relative-caret-position="386">
+              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,15 +84,64 @@
       <file leaf-file-name="ZawodnikDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="53" lean-forward="false" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+            <state relative-caret-position="198">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1709#1719#0" expanded="true" />
-                <marker date="1492866982627" expanded="true" signature="500:547" ph="INSERT INTO Zawodnik... " />
-                <marker date="1492866982627" expanded="true" signature="918:962" ph="SELECT * FRO... Zawodnik" />
-                <marker date="1492866982627" expanded="true" signature="1745:1799" ph="SELECT * FRO... Zawodnik" />
+                <element signature="e#1446#1456#0" expanded="true" />
+                <marker date="1492869082106" expanded="true" signature="533:580" ph="INSERT INTO Zawodnik... " />
+                <marker date="1492869082106" expanded="true" signature="787:831" ph="SELECT * FRO... Zawodnik" />
+                <marker date="1492869082106" expanded="true" signature="1482:1536" ph="SELECT * FRO... Zawodnik" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statement.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/sql/Statement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserSQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/ParserSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotImplement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/NotImplement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding>
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mundial.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Mundial.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,11 +156,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionDB.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConnectionDB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/ConnectionDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="308">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,11 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingletonConnectionService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SingletonConnectionService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/SingletonConnectionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="239">
+              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -153,7 +202,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="A_EntityCreator" />
+        <entry key="$PROJECT_DIR$" value="refractor" />
       </map>
     </option>
   </component>
@@ -173,10 +222,12 @@
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Wykonianie/TestZawodnik.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAO/ZawodnikDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Zawodnik.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/SingletonConnectionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/NotImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/ParserSQL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/ConnectionDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/SingletonConnectionService.java" />
       </list>
     </option>
   </component>
@@ -251,6 +302,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mundial_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mundial1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mundial1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mundial_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,16 +831,16 @@
       <workItem from="1492697891715" duration="3867000" />
       <workItem from="1492716484525" duration="10062000" />
       <workItem from="1492792202224" duration="2167000" />
-      <workItem from="1492864586623" duration="2189000" />
+      <workItem from="1492864586623" duration="4312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19159000" />
+    <option name="totallyTimeSpent" value="21282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -770,10 +851,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.502445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29558325" sideWeight="0.49755502" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29558325" sideWeight="0.49755502" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -870,10 +951,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1709#1719#0" expanded="true" />
-            <marker date="1492866982627" expanded="true" signature="500:547" ph="INSERT INTO Zawodnik... " />
-            <marker date="1492866982627" expanded="true" signature="918:962" ph="SELECT * FRO... Zawodnik" />
-            <marker date="1492866982627" expanded="true" signature="1745:1799" ph="SELECT * FRO... Zawodnik" />
+            <element signature="e#1446#1456#0" expanded="true" />
+            <marker date="1492869082106" expanded="true" signature="533:580" ph="INSERT INTO Zawodnik... " />
+            <marker date="1492869082106" expanded="true" signature="787:831" ph="SELECT * FRO... Zawodnik" />
+            <marker date="1492869082106" expanded="true" signature="1482:1536" ph="SELECT * FRO... Zawodnik" />
           </folding>
         </state>
       </provider>
@@ -931,10 +1012,10 @@
           <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1709#1719#0" expanded="true" />
-            <marker date="1492866982627" expanded="true" signature="500:547" ph="INSERT INTO Zawodnik... " />
-            <marker date="1492866982627" expanded="true" signature="918:962" ph="SELECT * FRO... Zawodnik" />
-            <marker date="1492866982627" expanded="true" signature="1745:1799" ph="SELECT * FRO... Zawodnik" />
+            <element signature="e#1446#1456#0" expanded="true" />
+            <marker date="1492869082106" expanded="true" signature="533:580" ph="INSERT INTO Zawodnik... " />
+            <marker date="1492869082106" expanded="true" signature="787:831" ph="SELECT * FRO... Zawodnik" />
+            <marker date="1492869082106" expanded="true" signature="1482:1536" ph="SELECT * FRO... Zawodnik" />
           </folding>
         </state>
       </provider>
@@ -1008,10 +1089,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1709#1719#0" expanded="true" />
-            <marker date="1492866982627" expanded="true" signature="500:547" ph="INSERT INTO Zawodnik... " />
-            <marker date="1492866982627" expanded="true" signature="918:962" ph="SELECT * FRO... Zawodnik" />
-            <marker date="1492866982627" expanded="true" signature="1745:1799" ph="SELECT * FRO... Zawodnik" />
+            <element signature="e#1446#1456#0" expanded="true" />
+            <marker date="1492869082106" expanded="true" signature="533:580" ph="INSERT INTO Zawodnik... " />
+            <marker date="1492869082106" expanded="true" signature="787:831" ph="SELECT * FRO... Zawodnik" />
+            <marker date="1492869082106" expanded="true" signature="1482:1536" ph="SELECT * FRO... Zawodnik" />
           </folding>
         </state>
       </provider>
@@ -1034,14 +1115,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/Model/aaa.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/aa.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Mundial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/ZawodnikWReprezentacja.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1107,6 +1180,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/SingletonConnectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAO/ZawodnikDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1115,10 +1196,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Mundial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1446#1456#0" expanded="true" />
+            <marker date="1492869082106" expanded="true" signature="533:580" ph="INSERT INTO Zawodnik... " />
+            <marker date="1492869082106" expanded="true" signature="787:831" ph="SELECT * FRO... Zawodnik" />
+            <marker date="1492869082106" expanded="true" signature="1482:1536" ph="SELECT * FRO... Zawodnik" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/NotImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state relative-caret-position="386">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/ParserSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1127,30 +1263,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/ConnectionDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="53" lean-forward="false" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1709#1719#0" expanded="true" />
-            <marker date="1492866982627" expanded="true" signature="500:547" ph="INSERT INTO Zawodnik... " />
-            <marker date="1492866982627" expanded="true" signature="918:962" ph="SELECT * FRO... Zawodnik" />
-            <marker date="1492866982627" expanded="true" signature="1745:1799" ph="SELECT * FRO... Zawodnik" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/SingletonConnectionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
