@@ -1,24 +1,33 @@
 package info.koczwara.mundial_1.Connection;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class ConnectionDB {
 
-    public static Connection connect() throws Exception {
-        Connection con = null;
-        Class.forName("com.mysql.jdbc.Driver");
+    private static Connection connection;
 
-        String USER = "tutorial";
-        String PASSWORD = "password";
-        String DB_URL = "jdbc:mysql://localhost:3306/mojaBaza"+"?verifyServerCertificate=false&useSSL=true";
 
-        con = DriverManager.getConnection(DB_URL, USER, PASSWORD);
-        System.out.println("Połączono z bazą danych.");
-        return con;
+    public static Connection getConnection() {
+        if (connection == null) {
+            connect();
+        }
+        return connection;
+    }
+
+    private static void connect() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            String USER = "tutorial";
+            String PASSWORD = "password";
+            String DB_URL = "jdbc:mysql://localhost:3306/mojaBaza" + "?verifyServerCertificate=false&useSSL=true";
+
+            connection = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+            System.out.println("Połączono z bazą danych.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

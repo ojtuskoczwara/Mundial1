@@ -11,9 +11,9 @@ import java.util.List;
 
 public class MainApp {
     public static void main(String[] args) throws Exception {
-
+        //dodawanieZawodnika();
         //wyswietlZawodnikaPoprzezId(2);
-        wyswietlZawodnikowPoprzezImieNazwisko("Jan", "Kowalski");
+        wyswietlZawodnikowPoprzezImieNazwisko("Adam", "Adamiak");
     }
 
     public static void dodawanieZawodnika() throws SQLException {
