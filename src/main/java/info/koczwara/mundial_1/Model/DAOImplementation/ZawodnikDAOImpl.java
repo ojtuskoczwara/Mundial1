@@ -61,15 +61,17 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
         Connection connection = ConnectionDB.connect();
         //Preparation
         PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setString(1,"imie");
-        statement.setString(2, "nazwisko");
+        statement.setString(1,imie);
+        statement.setString(2, nazwisko);
         ResultSet results = statement.executeQuery();
+        System.out.println(statement);
         while (results.next()) {
             //int id = results.getInt("idZawodnika");
             //String firstName = results.getString("imie");
             //String lastName = results.getString("nazwisko");
             //Zawodnik zawodnik = new Zawodnik(firstName,lastName);
             Zawodnik zawodnik = new Zawodnik();
+            zawodnik.setIdZawodnika(results.getInt("idZawodnika"));
             zawodnik.setImie(results.getString("imie"));
             zawodnik.setNazwisko(results.getString("nazwisko"));
             zawodnicy.add(zawodnik);
