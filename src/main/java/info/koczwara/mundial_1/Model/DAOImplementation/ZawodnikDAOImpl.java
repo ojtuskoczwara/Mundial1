@@ -9,29 +9,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ZawodnikDAOImpl implements ZawodnikDAO {
+    Connection connection = ConnectionDB.connect();
+    public ZawodnikDAOImpl() throws Exception {
+    }
 
-    public void addZawodnik(Zawodnik zawodnik) throws SQLException {
+    public void addZawodnik(Zawodnik zawodnik) throws Exception {
         String sql = "INSERT INTO Zawodnik(imie,nazwisko) VALUES(?,?)";
-        Connection connection = null;
         PreparedStatement statement = null;
-        try {
-            //Connection
-            Class.forName("com.mysql.jdbc.Driver");
-            String USER = "tutorial";
-            String PASSWORD = "password";
-            String URL = "jdbc:mysql://localhost:3306/mojaBaza?verifyServerCertificate=false&useSSL=true";
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
             //Preparation
             statement = connection.prepareStatement(sql);
             statement.setString(1,zawodnik.getImie());
             statement.setString(2, zawodnik.getNazwisko());
             //Execution
             statement.executeUpdate();
-        } catch (Exception e) {
-            System.out.println("TryCatch StudentDAOImpl: "+e);
-        }
-        statement.close();
-        connection.close();
+            ConnectionDB.close(statement, null);
     }
 
     public Zawodnik getZawodnikById(int id) throws Exception {
@@ -50,7 +41,7 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
             zawodnik.setImie(result.getString("imie"));
             zawodnik.setNazwisko(result.getString("nazwisko"));
         }
-        ConnectionDB.disconnect(statement, result, connection);
+        ConnectionDB.close(statement, result);
         return zawodnik;
     }
 
@@ -66,30 +57,40 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
         ResultSet results = statement.executeQuery();
         System.out.println(statement);
         while (results.next()) {
-            //int id = results.getInt("idZawodnika");
-            //String firstName = results.getString("imie");
-            //String lastName = results.getString("nazwisko");
-            //Zawodnik zawodnik = new Zawodnik(firstName,lastName);
             Zawodnik zawodnik = new Zawodnik();
-            zawodnik.setIdZawodnika(results.getInt("idZawodnika"));
             zawodnik.setImie(results.getString("imie"));
             zawodnik.setNazwisko(results.getString("nazwisko"));
             zawodnicy.add(zawodnik);
         }
-        ConnectionDB.disconnect(statement, results, connection);
+        ConnectionDB.close(statement, results);
         return zawodnicy;
     }
 
 
-    public List<Zawodnik> getAllZawodnik() throws SQLException {
-        return null;
+    public List<Zawodnik> getAllZawodnik() throws Exception {
+        String sql = "SELECT * FROM Zawodnik";
+        List<Zawodnik> zawodnicy = new ArrayList<Zawodnik>();
+        PreparedStatement statement = connection.prepareStatement(sql);
+        ResultSet result = statement.executeQuery();
+        while (result.next()) {
+            Zawodnik zawodnik = new Zawodnik();
+            zawodnik.setImie(result.getString("imie"));
+            zawodnik.setNazwisko(result.getString("nazwisko"));
+            zawodnicy.add(zawodnik);
+        }
+        ConnectionDB.close(statement, result);
+        return zawodnicy;
     }
 
     public void updateZawodnik(Zawodnik zawodnik) throws SQLException {
 
     }
 
-    public void deleteZawodnik(int idZawodnika) throws SQLException {
-
+    public void deleteZawodnik(int idZawodnika) throws Exception {
+        String sql = "DELETE FROM Zawodnik WHERE idZawodnika=?";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setInt(1,idZawodnika);
+        statement.executeUpdate();
+        ConnectionDB.close(statement,null);
     }
 }

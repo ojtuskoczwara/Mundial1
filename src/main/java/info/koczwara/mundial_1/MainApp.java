@@ -13,10 +13,15 @@ public class MainApp {
     public static void main(String[] args) throws Exception {
 
         //wyswietlZawodnikaPoprzezId(2);
-        wyswietlZawodnikowPoprzezImieNazwisko("Jan", "Kowalski");
+        //wyswietlZawodnikowPoprzezImieNazwisko("Jan", "Kowalski");
+        System.out.println("Przed:");
+        wyswietlWszystkichZawodnikow();
+        usuwanieZawodnika(1);
+        System.out.println("Po usunięciu:");
+        wyswietlWszystkichZawodnikow();
     }
 
-    public static void dodawanieZawodnika() throws SQLException {
+    public static void dodawanieZawodnika() throws Exception {
         Zawodnik z = new Zawodnik();
         ZawodnikDAOImpl zawodnikDAOImpl = new ZawodnikDAOImpl();
         z.setImie("Adam");
@@ -38,6 +43,19 @@ public class MainApp {
         for (Zawodnik z: zawodnicy) {
             System.out.println(z.getImie());
         }
+    }
+
+    public static void wyswietlWszystkichZawodnikow() throws Exception {
+        ZawodnikDAO dao = new ZawodnikDAOImpl();
+        List<Zawodnik> zawodnicy = dao.getAllZawodnik();
+        for (Zawodnik z: zawodnicy) {
+            System.out.println(z.getImie() + " " + z.getNazwisko());
+        }
+    }
+
+    public static void usuwanieZawodnika(int id) throws Exception {
+        ZawodnikDAO dao = new ZawodnikDAOImpl();
+        dao.deleteZawodnik(id);
     }
 
 

@@ -22,8 +22,7 @@ public class ConnectionDB {
     }
 
 
-    public static void disconnect(PreparedStatement statement, ResultSet resultSet, Connection connection) throws Exception {
-        System.out.println("Zamykanie połączenia z bazą danych.");
+    public static void close(PreparedStatement statement, ResultSet resultSet) throws Exception {
         if (statement != null) {
             statement.close();
             System.out.println("Statement close.");
@@ -32,9 +31,12 @@ public class ConnectionDB {
             resultSet.close();
             System.out.println("ResultSet close.");
         }
+    }
+
+    public static void disconnect(Connection connection) throws Exception {
         if (connection != null) {
             connection.close();
-            System.out.println("Connection close.");
+            System.out.println("Połączenie z bazą danych zostało zamknięte.");
         }
     }
 }
