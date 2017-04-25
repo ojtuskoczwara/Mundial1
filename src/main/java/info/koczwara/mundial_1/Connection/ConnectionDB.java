@@ -32,7 +32,6 @@ public class ConnectionDB {
 
 
     public static void disconnect(ResultSet resultSet) throws Exception {
-        System.out.println("Zamykanie połączenia z bazą danych.");
         if (resultSet.getStatement() != null) {
             resultSet.getStatement().close();
             System.out.println("Statement close.");

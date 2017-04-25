@@ -11,9 +11,10 @@ import java.util.List;
 
 public class MainApp {
     public static void main(String[] args) throws Exception {
-        dodawanieZawodnika();
+        //dodawanieZawodnika();
         //wyswietlZawodnikaPoprzezId(2);
-        wyswietlZawodnikowPoprzezImieNazwisko("Adam", "Adamiak");
+        //wyswietlZawodnikowPoprzezImieNazwisko("Adam", "Adamiak");
+        wyswietlWszystkichZawodnikow();
     }
 
     public static void dodawanieZawodnika() throws SQLException {
@@ -36,7 +37,15 @@ public class MainApp {
         ZawodnikDAO dao = new ZawodnikDAOImpl();
         List<Zawodnik> zawodnicy = dao.getZawodnicyByImieNazwisko(imie, nazwisko);
         for (Zawodnik z: zawodnicy) {
-            System.out.println(z.getImie());
+            System.out.println(z.getImie() +" "+ z.getNazwisko());
+        }
+    }
+
+    public static void wyswietlWszystkichZawodnikow() throws Exception {
+        ZawodnikDAO dao = new ZawodnikDAOImpl();
+        List<Zawodnik> zawodnicy = dao.getAllZawodnik();
+        for (Zawodnik z: zawodnicy) {
+            System.out.println(z.getImie() +" "+ z.getNazwisko());
         }
     }
 

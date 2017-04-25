@@ -52,8 +52,20 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
     }
 
 
-    public List<Zawodnik> getAllZawodnik() throws SQLException {
-        return null;
+    public List<Zawodnik> getAllZawodnik() throws Exception {
+        List<Zawodnik> zawodnicy = new ArrayList<Zawodnik>();
+        String sql = "SELECT * FROM Zawodnik";
+
+        ResultSet results = parserSQL.parseQuery(sql).executeQuery();
+
+        while (results.next()) {
+            Zawodnik zawodnik = new Zawodnik();
+            zawodnik.setImie(results.getString("imie"));
+            zawodnik.setNazwisko(results.getString("nazwisko"));
+            zawodnicy.add(zawodnik);
+        }
+        ConnectionDB.disconnect(results);
+        return zawodnicy;
     }
 
     public void updateZawodnik(Zawodnik zawodnik) throws SQLException {
