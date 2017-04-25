@@ -69,10 +69,12 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
     }
 
     public void updateZawodnik(Zawodnik zawodnik) throws SQLException {
-
+        String sql = "UPDATE Zawodnik SET imie=?, nazwisko=? WHERE idZawodnika=?";
+        parserSQL.parseQuery(sql, zawodnik.getIdZawodnika(), zawodnik.getImie(), zawodnik.getNazwisko()).executeUpdate();
     }
 
     public void deleteZawodnik(int idZawodnika) throws SQLException {
-
+        String sql = "DELETE FROM Zawodnik WHERE idZawodnika=?";
+        parserSQL.parseQuery(sql, idZawodnika).executeUpdate();
     }
 }

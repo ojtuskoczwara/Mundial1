@@ -32,7 +32,7 @@ public class ParserSQL {
                     throw new NotImplement("Nie obsługiwany format zaimplementuj go!!!");
                 }
             }
-            System.out.println("Zbudowano zapytanie"+statement);
+            System.out.println("Zbudowano zapytanie: "+statement);
             return statement;
         } catch (SQLException e) {
             e.printStackTrace();

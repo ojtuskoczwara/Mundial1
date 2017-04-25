@@ -4,24 +4,25 @@ import info.koczwara.mundial_1.Model.DAO.ZawodnikDAO;
 import info.koczwara.mundial_1.Model.DAOImplementation.ZawodnikDAOImpl;
 import info.koczwara.mundial_1.Model.Zawodnik;
 
-
 import java.sql.SQLException;
-import java.util.Iterator;
 import java.util.List;
 
 public class MainApp {
     public static void main(String[] args) throws Exception {
-        //dodawanieZawodnika();
+        dodawanieZawodnika();
         //wyswietlZawodnikaPoprzezId(2);
         //wyswietlZawodnikowPoprzezImieNazwisko("Adam", "Adamiak");
-        wyswietlWszystkichZawodnikow();
+        //wyswietlWszystkichZawodnikow();
+        //usuwanieZawodnikaId(2);
+        //System.out.println("Po usunięciu:");
+        //wyswietlWszystkichZawodnikow();
     }
 
     public static void dodawanieZawodnika() throws SQLException {
         Zawodnik z = new Zawodnik();
         ZawodnikDAOImpl zawodnikDAOImpl = new ZawodnikDAOImpl();
-        z.setImie("Franek");
-        z.setNazwisko("Frankowski");
+        z.setImie("Dawid");
+        z.setNazwisko("Lala");
         zawodnikDAOImpl.addZawodnik(z);
     }
 
@@ -47,6 +48,11 @@ public class MainApp {
         for (Zawodnik z: zawodnicy) {
             System.out.println(z.getImie() +" "+ z.getNazwisko());
         }
+    }
+
+    public static void usuwanieZawodnikaId(int id) throws Exception{
+        ZawodnikDAO dao = new ZawodnikDAOImpl();
+        dao.deleteZawodnik(id);
     }
 
 
