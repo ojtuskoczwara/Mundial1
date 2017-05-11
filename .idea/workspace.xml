@@ -2,21 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c361b23e-a1ad-4aab-b510-a24b081c014e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Factory2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/MainApp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/MainView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/MainViewController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ClassA.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ClassB.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/DodajZawodnikaWidok.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/DodajZawodnikaWidok.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/GlownyEkran.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/GlownyEkran.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikWidok.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikWidok.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/MainApp.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/AppMVC.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/AppMVC.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/ConnectionDB.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/ConnectionDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/SingletonConnectionService.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Connection/SingletonConnectionService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Controller/Controller$1.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Controller/Controller$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Controller/Controller$DodajZawodnikaListener.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Controller/Controller$DodajZawodnikaListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Controller/Controller.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Controller/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Factory.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Factory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/DAO/ZawodnikDAO.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/DAO/ZawodnikDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/Mundial.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/Mundial.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/Reprezentacja.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/Reprezentacja.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/Zawodnik.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/Zawodnik.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/ZawodnikWReprezentacja.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/Model/ZawodnikWReprezentacja.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/SprawdzanieViews.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/SprawdzanieViews.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/View/EkranGlownyView.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/View/EkranGlownyView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/View/ZawodnikView.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/View/ZawodnikView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/utils/NotImplement.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/utils/NotImplement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/utils/ParserSQL.class" afterPath="$PROJECT_DIR$/target/classes/info/koczwara/mundial_1/utils/ParserSQL.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mundial1.iml" afterPath="$PROJECT_DIR$/mundial1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/SprawdzanieViews.java" afterPath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/SprawdzanieViews.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlownyView.java" afterPath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlownyView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikView.java" afterPath="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikView.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,34 +44,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Zawodnik.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Zawodnik.java">
+      <file leaf-file-name="PanelAdministratoraView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratoraView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="e#331#332#0" expanded="false" />
-                <element signature="e#365#366#0" expanded="false" />
-                <element signature="e#416#417#0" expanded="false" />
-                <element signature="e#462#463#0" expanded="false" />
-                <element signature="e#493#494#0" expanded="false" />
-                <element signature="e#520#521#0" expanded="false" />
-                <element signature="e#560#561#0" expanded="false" />
-                <element signature="e#592#593#0" expanded="false" />
-                <element signature="e#627#628#0" expanded="false" />
-                <element signature="e#658#659#0" expanded="false" />
-                <element signature="e#706#707#0" expanded="false" />
-                <element signature="e#746#747#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZawodnikDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -69,20 +57,18 @@
       <file leaf-file-name="ZawodnikView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EkranGlownyView.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlownyView.java">
+      <file leaf-file-name="MundialDodajView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratora/MundialDodajView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="663">
+              <caret line="42" column="57" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -91,11 +77,39 @@
       <file leaf-file-name="SprawdzanieViews.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/SprawdzanieViews.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZawodnicyDodajZawodnikaView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratora/ZawodnicyDodajZawodnikaView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerPanelAdministratora.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerPanelAdministratora.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerEkranGlowny.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerEkranGlowny.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,11 +117,19 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mundial.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Mundial.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,11 +137,9 @@
       <file leaf-file-name="AppMVC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/AppMVC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="204">
               <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/ConnectionDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/ParserSQL.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java" />
@@ -181,12 +200,24 @@
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/DodajZawodnikaListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/AppController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikView.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/AppMVC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/SprawdzanieViews.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlownyView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/PanelAdministratoraView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerAll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerEkranGlowny.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/MundialDodajView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/PanelAdministratora/MundialDodajView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratoraView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Rozmiar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerPanelAdministratora.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratora/MundialDodajView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/SprawdzanieViews.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratora/ZawodnicyDodajZawodnikaView.java" />
       </list>
     </option>
   </component>
@@ -204,10 +235,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="x" value="-3" />
+    <option name="y" value="7" />
+    <option name="width" value="1108" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -225,7 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,6 +336,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mundial1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mundial1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mundial_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EkranGlowny" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mundial1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mundial1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mundial_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EkranGlowny" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PanelAdministratora" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,39 +569,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mundial1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mundial1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mundial_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Connection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -506,11 +579,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorialmvc2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
@@ -522,27 +595,7 @@
       <recent name="C:\Users\Wojtek\IdeaProjects\MundialProbne\Mundial1\src\main\java\info\koczwara\mundial_1\View" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SprawdzanieViews">
-    <configuration default="false" name="ClassB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="info.koczwara.mundial_1.View.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="info.koczwara.mundial_1.View.ClassB" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="mundial1" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ZawodnicyDodajZawodnikaView">
     <configuration default="false" name="MainView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -611,6 +664,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="info.koczwara.mundial_1.SprawdzanieViews" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="mundial1" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ZawodnicyDodajZawodnikaView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ZawodnicyDodajZawodnikaView" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1004,19 +1077,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ClassB" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MainView" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MainViewController" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AppMVC" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SprawdzanieViews" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MainView" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MainViewController" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AppMVC" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SprawdzanieViews" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ZawodnicyDodajZawodnikaView" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SprawdzanieViews" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AppMVC" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MainViewController" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MainView" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ClassB" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ZawodnicyDodajZawodnikaView" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SprawdzanieViews" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AppMVC" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MainViewController" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MainView" />
       </list>
     </recent_temporary>
   </component>
@@ -1046,44 +1119,47 @@
       <workItem from="1494258202339" duration="770000" />
       <workItem from="1494259354073" duration="1418000" />
       <workItem from="1494267678364" duration="11287000" />
-      <workItem from="1494332421145" duration="2752000" />
+      <workItem from="1494332421145" duration="11280000" />
+      <workItem from="1494503897159" duration="12127000" />
+      <workItem from="1494544848689" duration="280000" />
+      <workItem from="1494545562795" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50859000" />
+    <option name="totallyTimeSpent" value="71797000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-3" y="7" width="1108" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.502445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2877193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3557047" sideWeight="0.49755502" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20904645" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34351146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1105,56 +1181,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/NotImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/ParserSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Connection/ConnectionDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="73" lean-forward="false" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/utils/NotImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/Border.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/Border.form" />
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/Group.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/Group.jfd" />
@@ -1180,15 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Mundial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="73" lean-forward="false" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,9 +1228,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,15 +1243,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Factory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerAll.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1246,75 +1266,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#365#366#0" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-            <element signature="e#462#463#0" expanded="false" />
-            <element signature="e#493#494#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#560#561#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-            <element signature="e#627#628#0" expanded="false" />
-            <element signature="e#658#659#0" expanded="false" />
-            <element signature="e#706#707#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlownyView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Rozmiar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratoraView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerPanelAdministratora.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/ControllerEkranGlowny.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/AppMVC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/DAOImplementation/ZawodnikDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="0" />
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/SprawdzanieViews.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/Model/Mundial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/ZawodnikView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlownyView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratora/MundialDodajView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        <state relative-caret-position="663">
+          <caret line="42" column="57" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/SprawdzanieViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/koczwara/mundial_1/View/EkranGlowny/PanelAdministratora/ZawodnicyDodajZawodnikaView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

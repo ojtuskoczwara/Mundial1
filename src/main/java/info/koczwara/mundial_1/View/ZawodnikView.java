@@ -39,7 +39,7 @@ public class ZawodnikView extends JFrame{
     public void addDodajZawodnikaButtonListener(ActionListener listenForDodajZawodnikaButton) {        dodajZawodnikaButton.addActionListener(listenForDodajZawodnikaButton);
     }
 
-    void displayErrorMessage(String errorMessage) {
+    public void displayErrorMessage(String errorMessage) {
         JOptionPane.showMessageDialog(this, errorMessage);
     }
 }

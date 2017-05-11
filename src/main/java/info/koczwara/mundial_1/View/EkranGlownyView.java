@@ -2,6 +2,7 @@ package info.koczwara.mundial_1.View;
 
 
 import javax.swing.*;
+import java.awt.event.ActionListener;
 
 public class EkranGlownyView extends JFrame {
 
@@ -24,7 +25,21 @@ public class EkranGlownyView extends JFrame {
         add(wynikiButton);
         panelAdministratoraButton.setBounds(400,400,170,30);
         add(panelAdministratoraButton);
+    }
 
+    public void addPanelAdministratoraButtonListener(ActionListener listenForPanelAdministratoraButton) {
+        panelAdministratoraButton.addActionListener(listenForPanelAdministratoraButton);
+    }
 
+    public void addMundialeButtonListener(ActionListener listenForMundialeButton) {
+        mundialeButton.addActionListener(listenForMundialeButton);
+    }
+
+    public void addZawodnicyButtonListener(ActionListener listenForZawodnicyButton) {
+        zawodnicyButton.addActionListener(listenForZawodnicyButton);
+    }
+
+    public void addWynikiButtonListener(ActionListener listenForWynikiButton) {
+        wynikiButton.addActionListener(listenForWynikiButton);
     }
 }
