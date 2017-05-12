@@ -1,7 +1,7 @@
 package info.koczwara.mundial_1.Model.DAO;
 
 
-import info.koczwara.mundial_1.Model.Zawodnik;
+import info.koczwara.mundial_1.Model.Entity.Zawodnik;
 
 import java.sql.SQLException;
 import java.util.List;

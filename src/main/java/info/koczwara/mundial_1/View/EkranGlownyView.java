@@ -11,6 +11,8 @@ public class EkranGlownyView extends JFrame {
     private JButton wynikiButton = new JButton("Wyniki");
     private JButton panelAdministratoraButton = new JButton("Panel Administratora");
 
+
+
     public EkranGlownyView() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,500);

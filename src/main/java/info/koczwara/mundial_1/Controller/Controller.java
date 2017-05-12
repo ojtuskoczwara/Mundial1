@@ -1,8 +1,8 @@
 package info.koczwara.mundial_1.Controller;
 
 import info.koczwara.mundial_1.Model.DAO.ZawodnikDAO;
-import info.koczwara.mundial_1.Model.DAOImplementation.ZawodnikDAOImpl;
-import info.koczwara.mundial_1.Model.Zawodnik;
+import info.koczwara.mundial_1.Model.DAO.ZawodnikDAOImpl;
+import info.koczwara.mundial_1.Model.Entity.Zawodnik;
 import info.koczwara.mundial_1.View.ZawodnikView;
 
 import java.awt.event.ActionEvent;

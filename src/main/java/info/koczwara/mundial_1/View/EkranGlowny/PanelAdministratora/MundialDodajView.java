@@ -1,8 +1,6 @@
 package info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora;
 
 
-import info.koczwara.mundial_1.Rozmiar;
-
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
@@ -34,6 +32,10 @@ public class MundialDodajView extends JFrame {
         cofnijButton.setBounds(50,250,100,50);
         add(cofnijButton);
     }
+
+    public String getNazwaMundialu() { return nazwaMundialuTextField.getText(); }
+
+    public String getRokMundialu() { return rokMundialuTextField.getText().toString(); }
 
     public void setDodajMundialButtonListener(ActionListener listenDodajMundialButton) {
         dodajMundialButton.addActionListener(listenDodajMundialButton);

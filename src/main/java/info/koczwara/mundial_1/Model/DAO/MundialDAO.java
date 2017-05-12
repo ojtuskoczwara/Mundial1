@@ -1,7 +1,7 @@
 package info.koczwara.mundial_1.Model.DAO;
 
 
-import info.koczwara.mundial_1.Model.Mundial;
+import info.koczwara.mundial_1.Model.Entity.Mundial;
 
 import java.util.List;
 

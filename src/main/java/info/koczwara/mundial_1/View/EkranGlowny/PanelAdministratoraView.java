@@ -36,6 +36,8 @@ public class PanelAdministratoraView extends JFrame {
         cofnijButton.setBounds(10,300,100,30);
         add(cofnijButton);
 
+        setVisible(true);
+
     }
 
     public void addDodajMundialButtonListener(ActionListener listenDodajMundialButton) {
