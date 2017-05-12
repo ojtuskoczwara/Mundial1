@@ -17,6 +17,8 @@ public class MundialDodajView extends JFrame {
         setSize(600,500);
         setTitle("Mundial");
         setLayout(null);
+        setLocationRelativeTo(null);
+        setVisible(true);
 
         nazwaMundialuLabel.setBounds(50,20,150,30);
         add(nazwaMundialuLabel);

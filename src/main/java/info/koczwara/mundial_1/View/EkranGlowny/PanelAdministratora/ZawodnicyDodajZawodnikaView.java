@@ -15,6 +15,11 @@ public class ZawodnicyDodajZawodnikaView extends JFrame {
 
     public ZawodnicyDodajZawodnikaView() {
         super("Dodaj zawodnika");
+        setSize(600,500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(null);
+        setLocationRelativeTo(null);
+        setVisible(true);
 
         setLayout(new GridBagLayout());
         GridBagConstraints gc = new GridBagConstraints();
@@ -37,10 +42,6 @@ public class ZawodnicyDodajZawodnikaView extends JFrame {
         gc.gridx = 1;
         gc.gridy = 1;
         add(nazwiskoTextField, gc);
-
-        setSize(600,500);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
     }
 
     public static void main(String[] args){

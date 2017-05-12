@@ -9,11 +9,11 @@ import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratoraView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ControllerMundialDodaj {
+public class Controller21MundialDodaj {
     private MundialDodajView view;
     private Mundial model;
 
-    public ControllerMundialDodaj(MundialDodajView view, Mundial model) {
+    public Controller21MundialDodaj(MundialDodajView view, Mundial model) {
         this.view = view;
         this.model = model;
         this.view.setDodajMundialButtonListener(new DodajMundialButtonListener());
@@ -38,9 +38,7 @@ public class ControllerMundialDodaj {
     private class CofnijButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            PanelAdministratoraView panelAdministratoraView = new PanelAdministratoraView();
-            panelAdministratoraView.setLocationRelativeTo(null);
-            panelAdministratoraView.setVisible(true);
+            new Controller2PanelAdministratora(new PanelAdministratoraView());
             view.setVisible(false);
             view.dispose();
         }

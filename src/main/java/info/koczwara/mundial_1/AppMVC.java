@@ -1,10 +1,7 @@
 package info.koczwara.mundial_1;
 
-import info.koczwara.mundial_1.Controller.Controller;
-import info.koczwara.mundial_1.Controller.ControllerEkranGlowny;
-import info.koczwara.mundial_1.Model.Entity.Zawodnik;
+import info.koczwara.mundial_1.Controller.Controller1EkranGlowny;
 import info.koczwara.mundial_1.View.EkranGlownyView;
-import info.koczwara.mundial_1.View.ZawodnikView;
 
 
 public class AppMVC {
@@ -19,8 +16,7 @@ public class AppMVC {
 */
 
         EkranGlownyView view = new EkranGlownyView();
-        ControllerEkranGlowny controller = new ControllerEkranGlowny(view);
-
+        Controller1EkranGlowny controller = new Controller1EkranGlowny(view);
         view.setVisible(true);
     }
 }

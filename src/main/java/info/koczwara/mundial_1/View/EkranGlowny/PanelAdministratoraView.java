@@ -18,6 +18,9 @@ public class PanelAdministratoraView extends JFrame {
         setSize(600,500);
         setTitle("Panel administratora");
         setLayout(null);
+        setLocationRelativeTo(null);
+        setVisible(true);
+
 
         mundialLabel.setBounds(10,10,500,50);
         add(mundialLabel);
@@ -35,9 +38,6 @@ public class PanelAdministratoraView extends JFrame {
 
         cofnijButton.setBounds(10,300,100,30);
         add(cofnijButton);
-
-        setVisible(true);
-
     }
 
     public void addDodajMundialButtonListener(ActionListener listenDodajMundialButton) {

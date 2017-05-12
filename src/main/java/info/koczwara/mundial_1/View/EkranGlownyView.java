@@ -18,6 +18,8 @@ public class EkranGlownyView extends JFrame {
         setSize(600,500);
         setTitle("Ekran główny");
         setLayout(null);
+        setLocationRelativeTo(null);
+        setVisible(true);
 
         mundialeButton.setBounds(250,30,100,50);
         add(mundialeButton);
