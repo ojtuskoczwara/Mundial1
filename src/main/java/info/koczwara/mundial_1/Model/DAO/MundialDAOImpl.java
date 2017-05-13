@@ -33,4 +33,17 @@ public class MundialDAOImpl implements MundialDAO{
         ConnectionDB.disconnect(resultSet);
         return mundiale;
     }
+
+    @Override
+    public Mundial getMundialByLokalizacja(String lokalizacja) throws Exception {
+        String sql = "SELECT * FROM Mundial WHERE lokalizacja = ?";
+        ResultSet resultSet = parserSQL.parseQuery(sql,lokalizacja).executeQuery();
+        Mundial m = null;
+        while (resultSet.next()) {
+            m = new Mundial();
+            m.setIdMundialu(resultSet.getInt("idMundialu"));
+        }
+        ConnectionDB.disconnect(resultSet);
+        return m;
+    }
 }

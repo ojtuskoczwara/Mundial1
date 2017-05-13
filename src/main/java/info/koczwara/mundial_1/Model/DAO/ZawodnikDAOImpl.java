@@ -42,6 +42,7 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
 
         while (results.next()) {
             Zawodnik zawodnik = new Zawodnik();
+            zawodnik.setIdZawodnika(results.getInt("idZawodnika"));
             zawodnik.setImie(results.getString("imie"));
             zawodnik.setNazwisko(results.getString("nazwisko"));
             zawodnicy.add(zawodnik);

@@ -32,7 +32,7 @@ public class Factory {
         ZawodnikDAO dao = new ZawodnikDAOImpl();
         List<Zawodnik> zawodnicy = dao.getZawodnicyByImieNazwisko(imie, nazwisko);
         for (Zawodnik z: zawodnicy) {
-            System.out.println(z.getImie() +" "+ z.getNazwisko());
+            System.out.println(z.getImie() +" "+ z.getNazwisko() + " id: " + z.getIdZawodnika());
         }
     }
 

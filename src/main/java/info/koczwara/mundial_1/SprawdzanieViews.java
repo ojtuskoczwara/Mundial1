@@ -10,7 +10,7 @@ import info.koczwara.mundial_1.View.ZawodnikView;
 public class SprawdzanieViews {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         view2a2_reprezentacjaDodaj();
 
     }

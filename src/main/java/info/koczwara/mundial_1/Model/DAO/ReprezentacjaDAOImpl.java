@@ -55,4 +55,17 @@ public class ReprezentacjaDAOImpl implements ReprezentacjaDAO {
         String sql = "UPDATE Reprezentacja SET nazwa = ? WHERE idReprezentacji = ?";
         parserSQL.parseQuery(sql,reprezentacja.getNazwa(), reprezentacja.getIdReprezentacji()).executeUpdate();
     }
+
+    @Override
+    public Reprezentacja getIdRepByNazwa(String nazwaRep) throws Exception {
+        String sql = "SELECT * FROM Reprezentacja WHERE nazwa = ?";
+        ResultSet resultSet = parserSQL.parseQuery(sql, nazwaRep).executeQuery();
+        Reprezentacja reprezentacja = null;
+        while (resultSet.next()) {
+            reprezentacja = new Reprezentacja();
+            reprezentacja.setIdReprezentacji(resultSet.getInt("idReprezentacji"));
+        }
+        ConnectionDB.disconnect(resultSet);
+        return reprezentacja;
+    }
 }
