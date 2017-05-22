@@ -1,0 +1,84 @@
+package info.koczwara.mundial_1.View.EkranGlowny;
+
+
+import javax.swing.*;
+import java.awt.event.ActionListener;
+
+public class View2_0_PanelAdministratora extends JFrame {
+    private JButton dodajMundialButton = new JButton("Dodaj mundial");
+    private JButton edytujMundialButton = new JButton("Edytuj mundial");
+    private JButton usunMundialButton = new JButton("Usuń mundial");
+    private JButton dodajReprezentacjaButton = new JButton("Dodaj reprezentacje");
+    private JButton edytujReprezentacjaButton = new JButton("Edytuj reprezentacje");
+    private JButton dodajZawodnikaButton = new JButton("Dodaj zawodnika");
+    private JButton edytujZawodnikaButton = new JButton("Edytuj zawodnika");
+    private JButton cofnijButton = new JButton("<<< Cofnij");
+
+    public View2_0_PanelAdministratora() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(600,500);
+        setTitle("Panel administratora");
+        setLayout(null);
+        setLocationRelativeTo(null);
+        setVisible(true);
+
+
+        JPanel mundialPanel = new JPanel();
+        dodajMundialButton.setBounds(50,50,150,50);
+        mundialPanel.add(dodajMundialButton);
+        edytujMundialButton.setBounds(250,50,150,50);
+        mundialPanel.add(edytujMundialButton);
+        usunMundialButton.setBounds(450,50,150,50);
+        mundialPanel.add(usunMundialButton);
+        mundialPanel.setBounds(10,10,450,100);
+        mundialPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(),"Mundial Panel"));
+        this.add(mundialPanel);
+
+        JPanel reprezentacjaPanel = new JPanel();
+        dodajReprezentacjaButton.setBounds(50,140,150,50);
+        reprezentacjaPanel.add(dodajReprezentacjaButton);
+        edytujReprezentacjaButton.setBounds(250,140,150,50);
+        reprezentacjaPanel.add(edytujReprezentacjaButton);
+        reprezentacjaPanel.setBounds(10,120,450,100);
+        reprezentacjaPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(),"Reprezentacja Panel"));
+        this.add(reprezentacjaPanel);
+
+        JPanel zawodnikPanel = new JPanel();
+        dodajZawodnikaButton.setBounds(50,50,150,50);
+        edytujZawodnikaButton.setBounds(200,20,150,50);
+        zawodnikPanel.add(dodajZawodnikaButton);
+        zawodnikPanel.add(edytujZawodnikaButton);
+        zawodnikPanel.setBounds(10,230,450,100);
+        zawodnikPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(),"Zawodnik Panel"));
+        this.add(zawodnikPanel);
+
+
+
+        cofnijButton.setBounds(10,350,100,30);
+        add(cofnijButton);
+    }
+
+    public void addDodajMundialButtonListener(ActionListener listenDodajMundialButton) {
+        dodajMundialButton.addActionListener(listenDodajMundialButton);
+    }
+
+    public void addEdytujMundialButtonListener(ActionListener listenEdytujMundialButton) {
+        edytujMundialButton.addActionListener(listenEdytujMundialButton);
+    }
+
+    public void addDodajReprezentacjaButtonListener(ActionListener listenDodajReprezentacjaButton) {
+        dodajReprezentacjaButton.addActionListener(listenDodajReprezentacjaButton);
+    }
+
+    public void addEdytujReprezentacjaButtonListener(ActionListener listenEdytujReprezentacjaButton) {
+        edytujReprezentacjaButton.addActionListener(listenEdytujReprezentacjaButton);
+    }
+
+    public void addCofnijButtonListener(ActionListener listenCofnijButton) {
+        cofnijButton.addActionListener(listenCofnijButton);
+    }
+
+    public void addUsunMundialButtonListener(ActionListener listenUsunMundialButton) {
+        usunMundialButton.addActionListener(listenUsunMundialButton);
+    }
+}

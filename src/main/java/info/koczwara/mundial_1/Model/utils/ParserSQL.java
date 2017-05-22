@@ -38,5 +38,4 @@ public class ParserSQL {
         }
         return null;
     }
-
 }

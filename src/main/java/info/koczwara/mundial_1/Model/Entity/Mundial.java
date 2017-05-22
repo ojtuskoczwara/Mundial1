@@ -7,6 +7,13 @@ public class Mundial {
     private String lokalizacja;
     private int rok;
 
+    public Mundial() {}
+
+    public Mundial(String lokalizacja, int rok) {
+        this.lokalizacja = lokalizacja;
+        this.rok = rok;
+    }
+
     public int getIdMundialu() {
         return idMundialu;
     }
