@@ -76,28 +76,32 @@ public class Controller2_1_2_MundialEdytuj {
             int id = 0;
             int update = 0;
             Mundial m = null;
+
             try {
                 m = mundialDAO.getMundialByLokalizacjaRok(valueMundialLokalizacja, valueMundialRok);
             } catch (Exception e1) {
                 e1.printStackTrace();
             }
             id = m.getIdMundialu();
-            if (view.getNowaLokalizacjaTextField().isEmpty()) {
-                try {
-                    update = mundialDAO.updateMundial(id,valueMundialLokalizacja, Integer.parseInt(view.getNowyRokTextField()));
-                } catch (SQLException e1) {
-                    e1.printStackTrace();
-                }
-            }
-            else if (view.getNowyRokTextField().isEmpty()) {
-                try {
-                    update = mundialDAO.updateMundial(id,view.getNowaLokalizacjaTextField(), valueMundialRok);
-                } catch (SQLException e1) {
-                    e1.printStackTrace();
-                }
-            }
-            else if (view.getNowaLokalizacjaTextField().isEmpty() && view.getNowyRokTextField().isEmpty()) {
+
+            if (view.getNowaLokalizacjaTextField().isEmpty() && view.getNowyRokTextField().isEmpty()) {
                 view.showMyWarningMessage("Pola 'Lokalizacja' lub 'Rok' muszą zostać wypełnione!", "Wypełnij wymagane pola !");
+            }
+            else if (view.getNowaLokalizacjaTextField().isEmpty() || view.getNowyRokTextField().isEmpty()) {
+                if (view.getNowaLokalizacjaTextField().isEmpty()) {
+                    try {
+                        update = mundialDAO.updateMundial(id,valueMundialLokalizacja, Integer.parseInt(view.getNowyRokTextField()));
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+                else if (view.getNowyRokTextField().isEmpty()) {
+                    try {
+                        update = mundialDAO.updateMundial(id,view.getNowaLokalizacjaTextField(), valueMundialRok);
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                }
             }
 
             if (update > 0) {
@@ -111,5 +115,7 @@ public class Controller2_1_2_MundialEdytuj {
 
         }
      }
+
+
 }
 
