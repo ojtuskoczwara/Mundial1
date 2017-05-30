@@ -1,12 +1,12 @@
 package info.koczwara.mundial_1;
 
-import info.koczwara.mundial_1.Controller.Controller1_0_EkranGlowny;
-import info.koczwara.mundial_1.Model.DAO.MundialDAO;
-import info.koczwara.mundial_1.Model.DAO.MundialDAOImpl;
-import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.View2_1_1_MundialDodaj;
-import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.View2_2_1_ReprezentacjaDodaj;
-import info.koczwara.mundial_1.View.View1_0_EkranGlowny;
-import info.koczwara.mundial_1.View.EkranGlowny.View2_0_PanelAdministratora;
+import info.koczwara.mundial_1.Controller.Controller1EkranGlowny;
+import info.koczwara.mundial_1.Model.dao.MundialDAO;
+import info.koczwara.mundial_1.Model.dao.MundialDAOImpl;
+import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ViewMundialDodaj;
+import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.View231ZawodnikDodajDoReprezentacjaWMundial;
+import info.koczwara.mundial_1.View.View1EkranGlowny;
+import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
 import info.koczwara.mundial_1.View.ZawodnikView;
 
 import java.sql.SQLException;
@@ -25,25 +25,25 @@ public class SprawdzanieViews {
     }
 
     public static void view1_ekranGlowny() {
-        View1_0_EkranGlowny startView = new View1_0_EkranGlowny();
-        Controller1_0_EkranGlowny controller = new Controller1_0_EkranGlowny(startView);
+        View1EkranGlowny startView = new View1EkranGlowny();
+        Controller1EkranGlowny controller = new Controller1EkranGlowny(startView);
         startView.setVisible(true);
     }
 
     public static void view2a_panelAdministratora(){
-        View2_0_PanelAdministratora panelAdministratoraView = new View2_0_PanelAdministratora();
+        View20PanelAdministratora panelAdministratoraView = new View20PanelAdministratora();
         panelAdministratoraView.setLocationRelativeTo(null);
         panelAdministratoraView.setVisible(true);
     }
 
     public static void view2a1_mundialDodaj() {
-        View2_1_1_MundialDodaj view211MundialDodaj = new View2_1_1_MundialDodaj();
-        view211MundialDodaj.setLocationRelativeTo(null);
-        view211MundialDodaj.setVisible(true);
+        ViewMundialDodaj viewMundialDodaj = new ViewMundialDodaj();
+        viewMundialDodaj.setLocationRelativeTo(null);
+        viewMundialDodaj.setVisible(true);
     }
 
     public static void view2a2_reprezentacjaDodaj() {
-        View2_2_1_ReprezentacjaDodaj view = new View2_2_1_ReprezentacjaDodaj();
+        View231ZawodnikDodajDoReprezentacjaWMundial view = new View231ZawodnikDodajDoReprezentacjaWMundial();
         view.setVisible(true);
     }
 

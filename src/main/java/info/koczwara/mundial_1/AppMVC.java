@@ -1,7 +1,7 @@
 package info.koczwara.mundial_1;
 
-import info.koczwara.mundial_1.Controller.Controller1_0_EkranGlowny;
-import info.koczwara.mundial_1.View.View1_0_EkranGlowny;
+import info.koczwara.mundial_1.Controller.Controller1EkranGlowny;
+import info.koczwara.mundial_1.View.View1EkranGlowny;
 
 
 public class AppMVC {
@@ -15,8 +15,8 @@ public class AppMVC {
 
 */
 
-        View1_0_EkranGlowny view = new View1_0_EkranGlowny();
-        Controller1_0_EkranGlowny controller = new Controller1_0_EkranGlowny(view);
+        View1EkranGlowny view = new View1EkranGlowny();
+        Controller1EkranGlowny controller = new Controller1EkranGlowny(view);
         view.setVisible(true);
     }
 }
