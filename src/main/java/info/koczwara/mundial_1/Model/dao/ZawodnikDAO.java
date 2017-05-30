@@ -14,4 +14,5 @@ public interface ZawodnikDAO {
     public List<Zawodnik> getAllZawodnik() throws Exception;
     public void updateZawodnik(Zawodnik zawodnik) throws SQLException;
     public void deleteZawodnik(int idZawodnika) throws SQLException;
+    public  Zawodnik getLastZawodnik() throws Exception;
 }

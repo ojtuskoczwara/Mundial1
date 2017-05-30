@@ -77,4 +77,20 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
         String sql = "DELETE FROM Zawodnik WHERE idZawodnika=?";
         parserSQL.parseQuery(sql, idZawodnika).executeUpdate();
     }
+
+    @Override
+    public Zawodnik getLastZawodnik() throws Exception {
+        String sql = "SELECT * FROM Zawodnik WHERE idZawodnika IN (SELECT MAX(idZawodnika) FROM Zawodnik)";
+        Zawodnik zawodnik = null;
+        ResultSet result = parserSQL.parseQuery(sql).executeQuery();
+        if (result.next()) {
+            zawodnik = new Zawodnik();
+            zawodnik.setIdZawodnika(result.getInt("idZawodnika"));
+            zawodnik.setImie(result.getString("imie"));
+            zawodnik.setNazwisko(result.getString("nazwisko"));
+        }
+        ConnectionDB.disconnect(result);
+        return zawodnik;
+
+    }
 }

@@ -6,6 +6,7 @@ import info.koczwara.mundial_1.Model.entity.Mundial;
 import info.koczwara.mundial_1.Model.entity.Reprezentacja;
 import info.koczwara.mundial_1.Model.entity.Zawodnik;
 import info.koczwara.mundial_1.Model.entity.ZawodnikWReprezentacja;
+import info.koczwara.mundial_1.Model.utils.ShowMyMessage;
 import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ViewZawodnikDodajDoReprezentacjaWMundial;
 import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
 
@@ -14,6 +15,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.SQLException;
 import java.util.List;
 
 public class ControllerZawodnikDodajReprezentacjaWMundial {
@@ -29,6 +31,7 @@ public class ControllerZawodnikDodajReprezentacjaWMundial {
     ReprezentacjaDAO reprezentacjaDAO = new ReprezentacjaDAOImpl();
     MundialDAO mundialDAO = new MundialDAOImpl();
     ZawodnikWReprezentacjaDAO zawodnikWReprezentacjaDAO = new ZawodnikWReprezentacjaDAOImpl();
+    ShowMyMessage showMyMessage = new ShowMyMessage();
     private String valueMundial, valueMundialLokalizacja, valueReprezentacjaNazwa;
     private int valueMundialRok;
 
@@ -126,7 +129,53 @@ public class ControllerZawodnikDodajReprezentacjaWMundial {
     private class DodajZawodnikaButton implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            if (view.getImieZawodnika().isEmpty() || view.getNazwiskoZawodnika().isEmpty()) {
+                showMyMessage.errorMessage("Wypełnij pola IMIĘ i NAZWISKO!", "Uzupełnij brakujące pola");
+            }
+            else {
+                //Dodanie zawodnika do tabeli Zawodnik
+                modelZawodnik.setImie(view.getImieZawodnika());
+                modelZawodnik.setNazwisko(view.getNazwiskoZawodnika());
+                try {
+                    zawodnikDAO.addZawodnik(modelZawodnik);
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
 
+                //Pobranie idMundialu z tabeli t_Mundial automatycznie po dodaniu nowego uzytkownika, idMundialu == zaznaczony element z JList mundialList
+                try {
+                    modelMundial = mundialDAO.getMundialByLokalizacjaRok(valueMundialLokalizacja, valueMundialRok);
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
+
+                //Pobranie idReprezentacji z tabeli t_Reprezentacja, idReprezentacja == zaznaczony element z JList reprezentacjaList
+                try {
+                    modelReprezentacja = reprezentacjaDAO.getIdRepByNazwa(valueReprezentacjaNazwa);
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
+
+                //Pobranie idZawodnika z tabeli t_Zawodnik, idZawodnika == ostatni dodany zawodnik
+                try {
+                    modelZawodnik = zawodnikDAO.getLastZawodnik();
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
+
+                //Dodanie zawodnika,reprezentacji,mundialu do tabeli t_Zawodnik_W_Reprezentacja
+                try {
+                    zawodnikWReprezentacjaDAO.addZawodnikRepMundial(modelZawodnik.getIdZawodnika(), modelReprezentacja.getIdReprezentacji(), modelMundial.getIdMundialu());
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
+
+                //Dodanie zawodnika do JList zawodnikListModel ale bez uzycia metody pobierajacej z DB danych
+                //Po wybraniu innej reprezentacji lista wczyta juz z DB dane zawodnikow
+                String zawodnikDodajDoJListBezBazyDanych = modelZawodnik.getImie() +" "+ modelZawodnik.getNazwisko();
+                zawodnikListModel.addElement(zawodnikDodajDoJListBezBazyDanych);
+            }
         }
+
     }
 }

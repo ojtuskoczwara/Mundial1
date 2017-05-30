@@ -14,4 +14,17 @@ public  class ShowMyMessage {
         else if (type == "Warning")
             JOptionPane.showMessageDialog(null, message, title, JOptionPane.WARNING_MESSAGE);
     }
+
+
+    public void errorMessage(String message, String title) {
+        JOptionPane.showMessageDialog(null, message, title, JOptionPane.ERROR_MESSAGE);
+    }
+
+    public void informationMessage(String message, String title) {
+        JOptionPane.showMessageDialog(null, message, title, JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    public void warningMessage(String message, String title) {
+        JOptionPane.showMessageDialog(null, message, title, JOptionPane.WARNING_MESSAGE);
+    }
 }
