@@ -6,16 +6,16 @@ import info.koczwara.mundial_1.Model.entity.Reprezentacja;
 import info.koczwara.mundial_1.Model.entity.Zawodnik;
 import info.koczwara.mundial_1.Model.entity.ZawodnikWReprezentacja;
 import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.*;
-import info.koczwara.mundial_1.View.View1EkranGlowny;
-import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
+import info.koczwara.mundial_1.View.ViewEkranGlowny;
+import info.koczwara.mundial_1.View.EkranGlowny.ViewPanelAdministratora;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Controller20PanelAdministratora {
-    private View20PanelAdministratora view;
+public class ControllerPanelAdministratora {
+    private ViewPanelAdministratora view;
 
-    public Controller20PanelAdministratora(View20PanelAdministratora view) {
+    public ControllerPanelAdministratora(ViewPanelAdministratora view) {
         this.view = view;
         this.view.addCofnijButtonListener(new CofnijDoEkranGlownyListener());
         this.view.addDodajMundialButtonListener(new DodajMundialListener());
@@ -25,6 +25,8 @@ public class Controller20PanelAdministratora {
         this.view.addEdytujReprezentacjaButtonListener(new EdytujReprezentacjeListener());
         this.view.addUsunReprezentacjaButtonListener(new UsunReprezentacjeListener());
         this.view.addDodajZawodnikButtonListener(new DodajZawodnikListener());
+        this.view.addEdytujZawodnikButtonListener(new EdytujZawodnikListener());
+        this.view.addUsunZawodnikButtonListener(new UsunZawodnikListener());
 
 
     }
@@ -32,7 +34,7 @@ public class Controller20PanelAdministratora {
     private class CofnijDoEkranGlownyListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            new Controller1EkranGlowny(new View1EkranGlowny());
+            new ControllerEkranGlowny(new ViewEkranGlowny());
             view.setVisible(false);
             view.dispose();
         }
@@ -91,7 +93,23 @@ public class Controller20PanelAdministratora {
     private class DodajZawodnikListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            new ControllerZawodnikDodajReprezentacjaWMundial(new ViewZawodnikDodajDoReprezentacjaWMundial(), new Zawodnik(), new Reprezentacja(), new Mundial(), new ZawodnikWReprezentacja());
+            new ControllerZawodnikDodaj(new ViewZawodnikDodaj(), new Zawodnik(), new Reprezentacja(), new Mundial(), new ZawodnikWReprezentacja());
+            view.setVisible(false);
+        }
+    }
+
+    private class EdytujZawodnikListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            new ControllerZawodnikEdytuj(new ViewZawodnikEdytuj(), new Zawodnik(), new Reprezentacja(), new Mundial(), new ZawodnikWReprezentacja());
+            view.setVisible(false);
+        }
+    }
+
+    private class UsunZawodnikListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            new ControllerZawodnikUsun(new ViewZawodnikUsun(), new Zawodnik(), new Reprezentacja(), new Mundial(), new ZawodnikWReprezentacja());
             view.setVisible(false);
         }
     }

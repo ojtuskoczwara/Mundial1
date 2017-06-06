@@ -5,7 +5,7 @@ import info.koczwara.mundial_1.Model.dao.ReprezentacjaDAOImpl;
 import info.koczwara.mundial_1.Model.entity.Reprezentacja;
 import info.koczwara.mundial_1.Model.utils.*;
 import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ViewReprezentacjaDodaj;
-import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
+import info.koczwara.mundial_1.View.EkranGlowny.ViewPanelAdministratora;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -69,7 +69,7 @@ public class ControllerReprezentacjaDodaj {
     private class CofnijDoPanelAdmin implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            new Controller20PanelAdministratora(new View20PanelAdministratora());
+            new ControllerPanelAdministratora(new ViewPanelAdministratora());
             view.setVisible(false);
             view.dispose();
         }

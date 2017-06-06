@@ -7,8 +7,8 @@ import info.koczwara.mundial_1.Model.entity.Reprezentacja;
 import info.koczwara.mundial_1.Model.entity.Zawodnik;
 import info.koczwara.mundial_1.Model.entity.ZawodnikWReprezentacja;
 import info.koczwara.mundial_1.Model.utils.ShowMyMessage;
-import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ViewZawodnikDodajDoReprezentacjaWMundial;
-import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
+import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ViewZawodnikDodaj;
+import info.koczwara.mundial_1.View.EkranGlowny.ViewPanelAdministratora;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -18,8 +18,8 @@ import java.awt.event.MouseEvent;
 import java.sql.SQLException;
 import java.util.List;
 
-public class ControllerZawodnikDodajReprezentacjaWMundial {
-    private ViewZawodnikDodajDoReprezentacjaWMundial view;
+public class ControllerZawodnikDodaj {
+    private ViewZawodnikDodaj view;
     private Zawodnik modelZawodnik;
     private Reprezentacja modelReprezentacja;
     private Mundial modelMundial;
@@ -36,7 +36,7 @@ public class ControllerZawodnikDodajReprezentacjaWMundial {
     private int valueMundialRok;
 
 
-    public ControllerZawodnikDodajReprezentacjaWMundial(ViewZawodnikDodajDoReprezentacjaWMundial view, Zawodnik modelZawodnik, Reprezentacja modelReprezentacja, Mundial modelMundial, ZawodnikWReprezentacja modelZawodnikWReprezentacja) {
+    public ControllerZawodnikDodaj(ViewZawodnikDodaj view, Zawodnik modelZawodnik, Reprezentacja modelReprezentacja, Mundial modelMundial, ZawodnikWReprezentacja modelZawodnikWReprezentacja) {
         this.view = view;
         this.modelZawodnik = modelZawodnik;
         this.modelReprezentacja = modelReprezentacja;
@@ -54,7 +54,7 @@ public class ControllerZawodnikDodajReprezentacjaWMundial {
     private class CofnijDoPanelAdmin implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            new Controller20PanelAdministratora(new View20PanelAdministratora());
+            new ControllerPanelAdministratora(new ViewPanelAdministratora());
             view.setVisible(false);
             view.dispose();
         }

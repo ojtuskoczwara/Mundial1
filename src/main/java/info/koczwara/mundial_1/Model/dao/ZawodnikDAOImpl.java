@@ -70,7 +70,7 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
 
     public void updateZawodnik(Zawodnik zawodnik) throws SQLException {
         String sql = "UPDATE Zawodnik SET imie=?, nazwisko=? WHERE idZawodnika=?";
-        parserSQL.parseQuery(sql, zawodnik.getIdZawodnika(), zawodnik.getImie(), zawodnik.getNazwisko()).executeUpdate();
+        parserSQL.parseQuery(sql, zawodnik.getImie(), zawodnik.getNazwisko(), zawodnik.getIdZawodnika()).executeUpdate();
     }
 
     public void deleteZawodnik(int idZawodnika) throws SQLException {
@@ -92,5 +92,11 @@ public class ZawodnikDAOImpl implements ZawodnikDAO {
         ConnectionDB.disconnect(result);
         return zawodnik;
 
+    }
+
+    @Override
+    public void updateZawodnikById(String imie, String nazwisko, Zawodnik zawodnik) throws Exception {
+        String sql = "UPDATE Zawodnik SET imie=?, nazwisko=? WHERE idZawodnika=?";
+        parserSQL.parseQuery(sql, imie, nazwisko, zawodnik.getIdZawodnika()).executeUpdate();
     }
 }

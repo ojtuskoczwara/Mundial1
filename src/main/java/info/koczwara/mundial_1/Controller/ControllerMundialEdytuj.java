@@ -5,7 +5,7 @@ import info.koczwara.mundial_1.Model.dao.MundialDAO;
 import info.koczwara.mundial_1.Model.dao.MundialDAOImpl;
 import info.koczwara.mundial_1.Model.entity.Mundial;
 import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ViewMundialEdytuj;
-import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
+import info.koczwara.mundial_1.View.EkranGlowny.ViewPanelAdministratora;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -50,7 +50,7 @@ public class ControllerMundialEdytuj {
     private class CofnijButton implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            new Controller20PanelAdministratora(new View20PanelAdministratora());
+            new ControllerPanelAdministratora(new ViewPanelAdministratora());
             view.setVisible(false);
             view.dispose();
         }

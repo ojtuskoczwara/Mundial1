@@ -15,4 +15,5 @@ public interface ZawodnikDAO {
     public void updateZawodnik(Zawodnik zawodnik) throws SQLException;
     public void deleteZawodnik(int idZawodnika) throws SQLException;
     public  Zawodnik getLastZawodnik() throws Exception;
+    public void updateZawodnikById(String imie, String nazwisko, Zawodnik zawodnik) throws Exception;
 }

@@ -1,26 +1,26 @@
 package info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora;
 
+
 import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 
-/**
- * Created by Wojtek on 2017-05-30.
- */
-public class ViewZawodnikDodajDoReprezentacjaWMundial extends JFrame {
-    private JLabel imieLabel = new JLabel("Imię:");
+public class ViewZawodnikEdytuj extends JFrame{
+    private JLabel imieLabel = new JLabel("Wpisz imię:");
     private JTextField imieTextField = new JTextField();
-    private JLabel nazwiskoLabel = new JLabel("Nazwisko:");
+    private JLabel nazwiskoLabel = new JLabel("Wpisz nazwisko:");
     private JTextField nazwiskoTextField = new JTextField();
-    private JButton dodajZawodnikaButton = new JButton("Dodaj");
+    private JButton edytujButton = new JButton("Edytuj");
     private JButton cofnijButton = new JButton("<< Cofnij <<");
     private JList mundialList;
     private JList reprezentacjaList;
     private JList zawodnikList;
+    private DefaultListModel zawodnikListModel;
+    private DefaultListModel mundialListModel;
+    private DefaultListModel reprezentacjaListModel;
 
-
-    public ViewZawodnikDodajDoReprezentacjaWMundial() {
-        super("Dodawanie reprezentacji");
+    public ViewZawodnikEdytuj() {
+        super("Edytuj zawodnika");
         setSize(600,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
@@ -28,14 +28,17 @@ public class ViewZawodnikDodajDoReprezentacjaWMundial extends JFrame {
         setVisible(true);
 
 
-        mundialList = new JList();
+        mundialListModel = new DefaultListModel();
+        mundialList= new JList();
         mundialList.setBounds(50,20,120,200);
         add(mundialList);
 
+        reprezentacjaListModel = new DefaultListModel();
         reprezentacjaList = new JList();
         reprezentacjaList.setBounds(200,20,120,200);
         add(reprezentacjaList);
 
+        zawodnikListModel = new DefaultListModel();
         zawodnikList = new JList();
         zawodnikList.setBounds(350,20,120,200);
         add(zawodnikList);
@@ -48,38 +51,18 @@ public class ViewZawodnikDodajDoReprezentacjaWMundial extends JFrame {
         add(nazwiskoLabel);
         nazwiskoTextField.setBounds(320,250,150,30);
         add(nazwiskoTextField);
-        dodajZawodnikaButton.setBounds(250,400,100,30);
-        add(dodajZawodnikaButton);
+        edytujButton.setBounds(250,400,100,30);
+        add(edytujButton);
         cofnijButton.setBounds(20,400,100,30);
         add(cofnijButton);
-    }
-
-    public void addDodajZawodnikaButtonListener(ActionListener listenDodajZawodnikaButton) {
-        dodajZawodnikaButton.addActionListener(listenDodajZawodnikaButton);
     }
 
     public void addCofnijButtonListener(ActionListener listenCofnijButton) {
         cofnijButton.addActionListener(listenCofnijButton);
     }
 
-    public String getImieZawodnika() {
-        return imieTextField.getText();
-    }
-
-    public String getNazwiskoZawodnika() {
-        return nazwiskoTextField.getText();
-    }
-
-    public JList getMundialList() {
-        return mundialList;
-    }
-
-    public JList getReprezentacjaList() {
-        return reprezentacjaList;
-    }
-
-    public JList getZawodnikList() {
-        return zawodnikList;
+    public void addEdytujZawodnikaButtonListener(ActionListener listenEdytujZawodnikaButton) {
+        edytujButton.addActionListener(listenEdytujZawodnikaButton);
     }
 
     public void addListModelToMundialList(DefaultListModel mundialListModel) {
@@ -100,6 +83,30 @@ public class ViewZawodnikDodajDoReprezentacjaWMundial extends JFrame {
 
     public void addReprezentacjaListMouseListener(MouseAdapter listenReprezentacjaList) {
         reprezentacjaList.addMouseListener(listenReprezentacjaList);
+    }
+
+    public void addZawodnikListMouseListener(MouseAdapter listenZawodnikList) {
+        zawodnikList.addMouseListener(listenZawodnikList);
+    }
+
+    public String getImieZawodnika() {
+        return imieTextField.getText();
+    }
+
+    public String getNazwiskoZawodnika() {
+        return nazwiskoTextField.getText();
+    }
+
+    public JList getMundialList() {
+        return mundialList;
+    }
+
+    public JList getReprezentacjaList() {
+        return reprezentacjaList;
+    }
+
+    public JList getZawodnikList() {
+        return zawodnikList;
     }
 
 }

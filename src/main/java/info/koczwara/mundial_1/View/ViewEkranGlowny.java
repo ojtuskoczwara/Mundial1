@@ -4,7 +4,7 @@ package info.koczwara.mundial_1.View;
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
-public class View1EkranGlowny extends JFrame {
+public class ViewEkranGlowny extends JFrame {
 
     private JButton mundialeButton = new JButton("Mundiale");
     private JButton zawodnicyButton = new JButton("Zawodnicy");
@@ -13,7 +13,7 @@ public class View1EkranGlowny extends JFrame {
 
 
 
-    public View1EkranGlowny() {
+    public ViewEkranGlowny() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,500);
         setTitle("Ekran główny");

@@ -4,7 +4,7 @@ package info.koczwara.mundial_1.View.EkranGlowny;
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
-public class View20PanelAdministratora extends JFrame {
+public class ViewPanelAdministratora extends JFrame {
     private JButton dodajMundialButton = new JButton("Dodaj mundial");
     private JButton edytujMundialButton = new JButton("Edytuj mundial");
     private JButton usunMundialButton = new JButton("Usuń mundial");
@@ -16,7 +16,7 @@ public class View20PanelAdministratora extends JFrame {
     private JButton usunZawodnikaButton = new JButton("Usuń zawodnika");
     private JButton cofnijButton = new JButton("<<< Cofnij");
 
-    public View20PanelAdministratora() {
+    public ViewPanelAdministratora() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,500);
         setTitle("Panel administratora");
@@ -89,6 +89,14 @@ public class View20PanelAdministratora extends JFrame {
 
     public void addDodajZawodnikButtonListener(ActionListener listenDodajZawodnikButton) {
         dodajZawodnikaButton.addActionListener(listenDodajZawodnikButton);
+    }
+
+    public void addEdytujZawodnikButtonListener(ActionListener listenEdytujZawodnikButton) {
+        edytujZawodnikaButton.addActionListener(listenEdytujZawodnikButton);
+    }
+
+    public void addUsunZawodnikButtonListener(ActionListener listenUsunZawodnikButton) {
+        usunZawodnikaButton.addActionListener(listenUsunZawodnikButton);
     }
 
     public void addCofnijButtonListener(ActionListener listenCofnijButton) {

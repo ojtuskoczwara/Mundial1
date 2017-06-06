@@ -1,12 +1,17 @@
 package info.koczwara.mundial_1;
 
-import info.koczwara.mundial_1.Controller.Controller1EkranGlowny;
+import info.koczwara.mundial_1.Controller.ControllerEkranGlowny;
 import info.koczwara.mundial_1.Model.dao.MundialDAO;
 import info.koczwara.mundial_1.Model.dao.MundialDAOImpl;
+import info.koczwara.mundial_1.Model.dao.ZawodnikWReprezentacjaDAO;
+import info.koczwara.mundial_1.Model.dao.ZawodnikWReprezentacjaDAOImpl;
+import info.koczwara.mundial_1.Model.entity.Mundial;
+import info.koczwara.mundial_1.Model.entity.Reprezentacja;
+import info.koczwara.mundial_1.Model.entity.Zawodnik;
 import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.ViewMundialDodaj;
 import info.koczwara.mundial_1.View.EkranGlowny.PanelAdministratora.View231ZawodnikDodajDoReprezentacjaWMundial;
-import info.koczwara.mundial_1.View.View1EkranGlowny;
-import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
+import info.koczwara.mundial_1.View.ViewEkranGlowny;
+import info.koczwara.mundial_1.View.EkranGlowny.ViewPanelAdministratora;
 import info.koczwara.mundial_1.View.ZawodnikView;
 
 import java.sql.SQLException;
@@ -20,18 +25,38 @@ public class SprawdzanieViews {
         //view2a_panelAdministratora();
         //view2a1_mundialDodaj();
         //deleteMundial(5);
-        updateMundial();
+        //updateMundial();
+
+        Mundial mundial = new Mundial();
+        mundial.setLokalizacja("Polska/Ukraina");
+        mundial.setRok(2012);
+        Reprezentacja reprezentacja = new Reprezentacja();
+        reprezentacja.setNazwa("Polska");
+        Zawodnik zawodnik = new Zawodnik();
+        zawodnik.setImie("Jan");
+        zawodnik.setNazwisko("Kowalski");
+
+        ZawodnikWReprezentacjaDAO dao = new ZawodnikWReprezentacjaDAOImpl();
+        Zawodnik zawodnik2 = new Zawodnik();
+        zawodnik = dao.getZawodnikIdByLokalizacjaRokNazwaImieNazwisko(mundial,reprezentacja,zawodnik);
+        System.out.println("zawodnik Przed:  " +zawodnik.getIdZawodnika()+" "+zawodnik.getImie()+" "+zawodnik.getNazwisko());
+        zawodnik.setIdZawodnika(zawodnik2.getIdZawodnika());
+        System.out.println("zawodnik2 Po:  "+zawodnik2.getIdZawodnika());
+        System.out.println("zawodnik Po:  " +zawodnik.getIdZawodnika());
+
+
+
 
     }
 
     public static void view1_ekranGlowny() {
-        View1EkranGlowny startView = new View1EkranGlowny();
-        Controller1EkranGlowny controller = new Controller1EkranGlowny(startView);
+        ViewEkranGlowny startView = new ViewEkranGlowny();
+        ControllerEkranGlowny controller = new ControllerEkranGlowny(startView);
         startView.setVisible(true);
     }
 
     public static void view2a_panelAdministratora(){
-        View20PanelAdministratora panelAdministratoraView = new View20PanelAdministratora();
+        ViewPanelAdministratora panelAdministratoraView = new ViewPanelAdministratora();
         panelAdministratoraView.setLocationRelativeTo(null);
         panelAdministratoraView.setVisible(true);
     }

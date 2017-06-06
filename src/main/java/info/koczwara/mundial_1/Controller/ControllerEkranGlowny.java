@@ -1,16 +1,16 @@
 package info.koczwara.mundial_1.Controller;
 
 
-import info.koczwara.mundial_1.View.View1EkranGlowny;
-import info.koczwara.mundial_1.View.EkranGlowny.View20PanelAdministratora;
+import info.koczwara.mundial_1.View.ViewEkranGlowny;
+import info.koczwara.mundial_1.View.EkranGlowny.ViewPanelAdministratora;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Controller1EkranGlowny {
-    private View1EkranGlowny view;
+public class ControllerEkranGlowny {
+    private ViewEkranGlowny view;
 
-    public Controller1EkranGlowny(View1EkranGlowny view) {
+    public ControllerEkranGlowny(ViewEkranGlowny view) {
         this.view = view;
         this.view.addPanelAdministratoraButtonListener(new PanelAdministratoraListener());
     }
@@ -18,7 +18,7 @@ public class Controller1EkranGlowny {
     private class PanelAdministratoraListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            new Controller20PanelAdministratora(new View20PanelAdministratora());
+            new ControllerPanelAdministratora(new ViewPanelAdministratora());
             view.setVisible(false);
         }
     }
