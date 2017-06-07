@@ -13,5 +13,6 @@ public interface ZawodnikWReprezentacjaDAO {
     public List<Reprezentacja> getAllReprezentacjeAtMundial(String mundialName, int mundialRok) throws Exception;
     public int getIdZawodnikByLokalizacjaNazwaImieNazwisko(String mundialLokalizacja, String reprezentacjaNazwa, Zawodnik zawodnik) throws Exception;
     public Zawodnik getZawodnikIdByLokalizacjaRokNazwaImieNazwisko(Mundial mundial, Reprezentacja reprezentacja, Zawodnik zawodnik) throws Exception;
+    public void deleteRowsByMundialIdReprezentacjaIdZawodnikId(Mundial mundial, Reprezentacja reprezentacja, Zawodnik zawodnik) throws Exception;
 
 }

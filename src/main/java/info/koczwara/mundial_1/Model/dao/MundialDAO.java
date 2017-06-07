@@ -21,4 +21,5 @@ public interface MundialDAO {
 
     public int getMundialByLokalRok(String lokalizacja, int rok) throws Exception;
 
+
 }

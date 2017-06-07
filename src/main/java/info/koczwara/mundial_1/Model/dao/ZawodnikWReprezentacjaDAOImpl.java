@@ -78,4 +78,10 @@ public class ZawodnikWReprezentacjaDAOImpl implements ZawodnikWReprezentacjaDAO 
         ConnectionDB.disconnect(resultSet);
         return z;
     }
+
+    @Override
+    public void deleteRowsByMundialIdReprezentacjaIdZawodnikId(Mundial mundial, Reprezentacja reprezentacja, Zawodnik zawodnik) throws Exception {
+        String sql = "DELETE FROM Zawodnik_W_Reprezentacja WHERE idMundialu = ? AND idReprezentacji = ? AND idZawodnika = ?";
+        parserSQL.parseQuery(sql, mundial.getIdMundialu(), reprezentacja.getIdReprezentacji(), zawodnik.getIdZawodnika()).executeUpdate();
+    }
 }
